@@ -28,161 +28,259 @@ Publish the website in the LocalHost.
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dribbble Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PharmEasy - Online E-Commerce Store</title>
+  
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     body {
-      scroll-behavior: smooth;
-      background-color: rgb(233, 233, 129);
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
     }
-    section {
-      padding: 60px 0;
+    header {
+      background: linear-gradient(135deg, #9c28a7, #502c9f);
+      padding: 50px 0;
+      color: white;
+    }
+    .navbar {
+      background-color: #191987;
+    }
+    .navbar-nav .nav-link {
+      color: white !important;
+      font-weight: 500;
     }
     .hero {
-      background-color: #ea4c89; /* Dribbble pink */
-      color: rgb(142, 219, 230);
+      background:#ea4c89 url('shop easy-hero.jpg) no-repaet centrer');
+      padding: 100px 0;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
       text-align: center;
-      padding: 100px 20px;
     }
-    .shot-card img {
-      border-radius: 10px;
+    .card img {
+      height: 200px;
+      object-fit: contain;
+      padding: 10px;
+    }
+    .card {
+      border: none;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
     }
     footer {
       background-color: #343a40;
-      color: rgb(117, 178, 235);
-      padding: 20px 0;
+      padding: 20px;
+      color: white;
+      margin-top: 50px;
     }
   </style>
 </head>
+
 <body>
 
-  <!-- ✅ Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">DribbbleClone</a>
+      <a class="navbar-brand fw-bold" href="#">PharmEasy</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#shots">Shots</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- ✅ Hero Section -->
-  <section class="hero" id="home">
+  <!-- Hero Section -->
+   
+  <section class="hero">
     <div class="container">
-      <h1 class="display-4 fw-bold">Discover Creative Work</h1>
-      <p class="lead mt-3">A small Dribbble-style landing page clone built with Bootstrap.</p>
-      <a href="#shots" class="btn btn-light btn-lg mt-3">Explore Shots</a>
+      <h1 class="display-4 fw-bold">S K SHOPPING ZONE</h1>
+      <p class="lead">Style it. Love it.Because fashion starts here.❤️ Shop with trust.
+Delivered with love.</p>
+      <a href="#products" class="btn btn-light btn-lg mt-3">Shop Now</a>
     </div>
   </section>
 
-  <!-- ✅ Shots Section -->
-  <section id="shots">
-    <div class="container">
-      <h2 class="text-center mb-5">Recent Shots</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card shot-card shadow-sm">
-            <img src="image 1.jpg" class="card-img-top" alt="Shot 1">
-            <div class="card-body">
-              <h5 class="card-title">Creative Design 1</h5>
-              <p class="card-text">A beautiful UI/UX shot showcasing modern design elements.</p>
-            </div>
+  <section class="container my-5" id="shop">
+  <h2 class="text-center mb-4 fw-bold">🛍️ Shop Now</h2>
+  <p class="text-center text-muted mb-5"><h1>WOMENS FASION</h1></p>
+
+  <!-- Featured Products -->
+  <section class="container my-5" id="products">
+    <h2 class="text-center mb-4">fashion</h2>
+    <div class="row g-4">
+
+      <!-- Product 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow-sm text-center">
+          <img src="kurthi.webp" class="card-img-top" alt="Tablet">
+          <div class="card-body">
+            <h5 class="card-title">kurti</h5>
+            <p class="card-text text-success fw-bold">Rs:250</p>
+            <button class="btn btn-success btn-sm">Add to Cart</button>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card shot-card shadow-sm">
-            <img src="image 2.jpg" class="card-img-top" alt="Shot 2">
-            <div class="card-body">
-              <h5 class="card-title">Creative Design 2</h5>
-              <p class="card-text">A stylish mockup with clean and minimal aesthetics.</p>
-            </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow-sm text-center">
+          <img src="slippers.jpg" class="card-img-top" alt="Capsule">
+          <div class="card-body">
+            <h5 class="card-title">soft slippers</h5>
+            <p class="card-text text-success fw-bold">₹250</p>
+            <button class="btn btn-success btn-sm">Add to Cart</button>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card shot-card shadow-sm">
-            <img src="image 3.jpg" class="card-img-top" alt="Shot 3">
-            <div class="card-body">
-              <h5 class="card-title">Creative Design 3</h5>
-              <p class="card-text">Showcasing colorful illustrations and UI components.</p>
-            </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow-sm text-center">
+          <img src="makeup.jpg" class="card-img-top" alt="Syrup">
+          <div class="card-body">
+            <h5 class="card-title">Dazller makeup products</h5>
+            <p class="card-text text-success fw-bold">₹350</p>
+            <button class="btn btn-success btn-sm">Add to Cart</button>
           </div>
         </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow-sm text-center">
+          <img src="jewellery.jpg" class="card-img-top" alt="Drips">
+          <div class="card-body">
+            <h5 class="card-title">jewllery</h5>
+            <p class="card-text text-success fw-bold">₹650</p>
+            <button class="btn btn-success btn-sm">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container my-5" id="shop">
+  <h2 class="text-center mb-4 fw-bold">🛍️ Shop Now</h2>
+  <p class="text-center text-muted mb-5"><h1>MENS FASION</h1></p>
+
+  <!-- Featured Products -->
+  <section class="container my-5" id="products">
+    <h2 class="text-center mb-4">fashion</h2>
+    <div class="row g-4">
+
+      <!-- Product 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow-sm text-center">
+          <img src="bracelets.jpg" class="card-img-top" alt="Tablet">
+          <div class="card-body">
+            <h5 class="card-title">Braclets</h5>
+            <p class="card-text text-success fw-bold">Rs:250</p>
+            <button class="btn btn-success btn-sm">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow-sm text-center">
+          <img src="watch.jpeg" class="card-img-top" alt="Capsule">
+          <div class="card-body">
+            <h5 class="card-title">watch</h5>
+            <p class="card-text text-success fw-bold">₹350</p>
+            <button class="btn btn-success btn-sm">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow-sm text-center">
+          <img src="shirts.jpg" class="card-img-top" alt="Syrup">
+          <div class="card-body">
+            <h5 class="card-title">Shirt</h5>
+            <p class="card-text text-success fw-bold">₹450</p>
+            <button class="btn btn-success btn-sm">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow-sm text-center">
+          <img src="shoe.jpg" class="card-img-top" alt="Drips">
+          <div class="card-body">
+            <h5 class="card-title">Mens shoes</h5>
+            <p class="card-text text-success fw-bold">₹650</p>
+            <button class="btn btn-success btn-sm">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Offers Section -->
+  <section class="bg-light py-5" id="offers">
+    <div class="container text-center">
+      <h2>Exclusive Offers</h2>
+      <p class="lead">Up to 40% off on your first order! Use code <strong></strong></p>
+      <a href="#products" class="btn btn-success">Shop Offers</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="container my-5" id="contact">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <button class="btn btn-success w-100">Submit</button>
+        </form>
       </div>
     </div>
   </section>
 
-  <!-- ✅ About Section -->
-  <section id="about" class="bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">About</h2>
-      <p class="text-center">This is a simplified landing page clone inspired by Dribbble, built using Bootstrap. It demonstrates responsive design, cards, and navigation components.About project
-
-Keckly is a platform that transforms collaboration into powerful investor presentations. The landing page focuses on clarity and teamwork, showing how simple it can be to prepare materials that resonate with investors.
-
-Task
-
-The task was to design a landing page with friendly illustrations and structured content that communicate trust, simplicity, and collaboration. The main goal was to make investor presentations feel accessible and engaging.
-
-Process
-
-We built the structure around bold headlines, minimal typography, and supportive illustration. A hero section introduces the value proposition with a strong tagline and a video CTA. Soft colors and vector characters emphasize teamwork and communication. Layout is kept clean with clear navigation, guiding users to templates, collaboration tools, and FAQ.
-
-Result
-
-The result is a welcoming landing page that blends business clarity with a human touch. Illustrations and layout balance professionalism and friendliness, helping users feel confident while preparing investor materials.</p>
-    </div>
-  </section>
-
-  <!-- ✅ Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="text-center mb-4">Contact</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <form>
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Your Name" required>
-            </div>
-            <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Your Email" required>
-            </div>
-            <div class="mb-3">
-              <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-pink w-100" style="background-color:#ea4c89; color:white;">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ✅ Footer -->
+  <!-- Footer -->
   <footer class="text-center">
-    <div class="container">
-      <p>&copy; 2025 | Designed by Nivetha</p>
-    </div>
+    <p>Designed by Nivetha.</p>
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 ```
 # OUTPUT:
+<img width="1366" height="715" alt="Screenshot 2025-10-07 221318" src="https://github.com/user-attachments/assets/0899c405-f241-415c-abab-1a6d2ed1724f" />
 
-<img width="1366" height="712" alt="Screenshot 2025-10-05 222722" src="https://github.com/user-attachments/assets/9d2af279-ace0-4203-9d35-4d395cf8b081" />
+<img width="1366" height="708" alt="Screenshot 2025-10-07 221332" src="https://github.com/user-attachments/assets/2d6bf0ba-a720-429f-a875-0539dae2c4da" />
 
-<img width="1366" height="711" alt="Screenshot 2025-10-05 222931" src="https://github.com/user-attachments/assets/0e05ee16-4022-4a88-a773-5592341407c0" />
-
+<img width="1366" height="711" alt="Screenshot 2025-10-07 221251" src="https://github.com/user-attachments/assets/93fe0a9c-7516-4661-aa92-e9bf39a41a3f" />
 
 # RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
